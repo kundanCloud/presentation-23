@@ -6,6 +6,7 @@ const rst = document.getElementById("restart");
 var cs = 0;
 
 nsb.addEventListener("click", (e) => {
+  debugger;
   if (cs < chv.childElementCount - 1) ++cs;
   pos.innerHTML = cs + 1;
   chv.style.transform = "translateX(" + -100 * cs + "vw)";
